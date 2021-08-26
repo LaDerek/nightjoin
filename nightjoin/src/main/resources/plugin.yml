@@ -1,0 +1,5 @@
+name: nightjoin
+version: '${project.version}'
+main: com.derek.nightjoin
+api-version: 1.16
+authors: [ DerekLA ]
