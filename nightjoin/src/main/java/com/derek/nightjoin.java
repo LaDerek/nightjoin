@@ -31,12 +31,11 @@ public class nightjoin extends JavaPlugin implements Listener{
         scheduler.scheduleSyncDelayedTask(this, new Runnable() {
             @Override
             public void run() {
-                for (Player p : Bukkit.getServer().getOnlinePlayers()) {
                     if (!e.getPlayer().hasPermission("nightjoin.join")) {
+                        Player p = e.getPlayer();
                         p.kickPlayer(ChatColor.RED + "У вас нет прав для игры на сервере!");
                     }
                 }
-            }
         }, 10);
     }
 }
